@@ -16,15 +16,36 @@ $templateParser->assign('title', 'Me First And The Gimme Gimmes');
 // Display template: output html
 $templateParser->display('head.tpl');
 
-$templateParser->assign('headertext', 'JOEEEEEEEEEEEEEEEEE');
+// asign headertext
+$templateParser->assign('headertext', 'Dit is een header');
 
+//display template: output html
 $templateParser->display('header.tpl');
 
 // Get newsarticles from database
-include('model/select_newsarticles.php');
+//include('model/select_newsarticles.php');
 
-// Show newsarticles 'old style' => refactor to template system.
-include('views/newsarticles.php');
+//$templateParser->assign('result', $result);
+
+//$templateParser->display('newsarticle.tpl');
+
+$action = isset($_GET['action'])?$_GET['action']:'home';
+
+switch($action) {
+	case 'home':
+		// Get newsarticles from database
+		include('model/select_newsarticles.php');
+		$templateParser->assign('result', $result);
+		$templateParser->display('newsarticle.tpl');
+		break;
+
+	case 'about':
+		$templateParser->display('about.tpl');
+		break;
+}
+
+
+
 
 $templateParser->assign('footertext', 'Dit is een footer');
 

@@ -11,8 +11,8 @@ setlocale(LC_ALL, 'nl_NL');
 
 // Database settings
 define('DB_HOST','localhost');
-define('DB_NAME','MyBand');
-define('DB_USERNAME','root');
-define('DB_PASSWORD','');
+define('DB_NAME','19650_');
+define('DB_USERNAME','196501');
+define('DB_PASSWORD','wymxsoft');
 
 ?>
