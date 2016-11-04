@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.18, created on 2016-10-12 14:44:59
+<?php /* Smarty version Smarty-3.1.18, created on 2016-11-03 23:54:44
          compiled from "views\header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:816257ebd265708781-42742859%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '765d62663ff840c30179c2633d916fc5606f6d1d' => 
     array (
       0 => 'views\\header.tpl',
-      1 => 1476276297,
+      1 => 1478213652,
       2 => 'file',
     ),
   ),
@@ -17,17 +17,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'version' => 'Smarty-3.1.18',
   'unifunc' => 'content_57ebd26576ba53_46580591',
-  'variables' => 
-  array (
-    'headertext' => 0,
-  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_57ebd26576ba53_46580591')) {function content_57ebd26576ba53_46580591($_smarty_tpl) {?><header>
-	<p><?php echo $_smarty_tpl->tpl_vars['headertext']->value;?>
-</p>
-	<ul>
-		<li><a href="http://localhost/Leerjaar2/periode1/MyBand/test/index.php?action=home">home</a></li>
-		<li><a href="http://localhost/Leerjaar2/periode1/MyBand/test/index.php?action=about">About</a></li>
-	</ul>
-</header><?php }} ?>
+
+</header>
+<div id="menubar">
+	<a href="http://19650.hosts.ma-cloud.nl/bewijzenmap/leerjaar2/MyBand/?action=home">Home</a>
+	<a href="http://19650.hosts.ma-cloud.nl/bewijzenmap/leerjaar2/MyBand/?action=max">Max</a>
+	<a href="http://19650.hosts.ma-cloud.nl/bewijzenmap/leerjaar2/MyBand/?action=daniel">Daniel</a>
+	<a href="http://19650.hosts.ma-cloud.nl/bewijzenmap/leerjaar2/MyBand/?action=schedule">schedule</a>
+</div><?php }} ?>

@@ -1,7 +1,9 @@
 <header>
-	<p>{$headertext}</p>
-	<ul>
-		<li><a href="http://localhost/Leerjaar2/periode1/MyBand/test/index.php?action=home">home</a></li>
-		<li><a href="http://localhost/Leerjaar2/periode1/MyBand/test/index.php?action=about">About</a></li>
-	</ul>
+
 </header>
+<div id="menubar">
+	<a href="http://19650.hosts.ma-cloud.nl/bewijzenmap/leerjaar2/MyBand/?action=home">Home</a>
+	<a href="http://19650.hosts.ma-cloud.nl/bewijzenmap/leerjaar2/MyBand/?action=max">Max</a>
+	<a href="http://19650.hosts.ma-cloud.nl/bewijzenmap/leerjaar2/MyBand/?action=daniel">Daniel</a>
+	<a href="http://19650.hosts.ma-cloud.nl/bewijzenmap/leerjaar2/MyBand/?action=schedule">schedule</a>
+</div>

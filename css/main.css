@@ -6,7 +6,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-
+	background-color: #D6013B;
 }
 
 .desc {
@@ -20,17 +20,119 @@ body {
 		
 }
 
-img {
-	width: 1000px;
+/*home pagina*/
+
+header {
+	width: 100%;
+	height: 500px;
+	background-image: url("../image/header.jpg");
+	background-size: cover;
+	background-position: center center;
+}
+
+#menubar {
+	width: 100%;
+	height: 50px;
+	background-color: #031B48;
+}
+
+#menubar a {
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-align: center;
+	float: left;
+	font-size: 30pt;
+	margin-left: 50px;
+}
+
+#Max {
+	width: 50%;
+	height: 500px;
+	background-color: aliceblue;
+	border-radius: 50px;
+	margin-left: 200px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#Daniel {
+	width: 50%;
+	height: 500px;
+	background-color: aliceblue;
+	border-radius: 50px;
+	float: right;
+	margin-right: 200px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+div img {
+	width: 45%;
+  display: block;
+	margin: 0 auto;
+}
+
+div h1 {
+	text-align: center;
+}
+
+/*max pagina*/
+
+#prestaties-max {
+	width: 50%;
+	height: 500px;
+	background-color: aliceblue;
+	border-radius: 50px;
+	float: right;
+	margin-right: 200px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+#prestaties-daniel {
+	width: 50%;
+	height: 500px;
+	background-color: aliceblue;
+	border-radius: 50px;
+	margin-left: 200px;
+	margin-top: 20px;
+	text-align: center;
+  margin-top: 600px;
+}
+
+/*Schema*/
+
+.driver {
+	width: 33%;
+	height: 50px;
+	text-align: center;
+	margin-top: 20px;
+	background-color: white;
+}
+
+.driver p {
+	float: left;
+	margin-left: 50px;
+	text-align: center;
+}
+
+.schedule {
+	width: 33%;
+	height: 50px;
+	text-align: center;
+	margin-top: 20px;
+	background-color: white;
+	float: right;
+}
+
+.schedule p {
+	float: left;
+	margin-left: 50px;
+	text-align: center;
 }
 
 footer {
-	width: 100%;
-	height: 100px;
-	background-color: #166589;
-}
-
-header {
 	width: 100%;
 	height: 100px;
 	background-color: #166589;

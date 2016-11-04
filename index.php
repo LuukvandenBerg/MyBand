@@ -11,43 +11,42 @@ include 'includes/database.php';
 include 'includes/functs.php';
 
 // Assign value of page title to the smarty variable 'title', usually the value comes from a database
-$templateParser->assign('title', 'Me First And The Gimme Gimmes');
+$templateParser->assign('title', 'Red bull racing');
 
 // Display template: output html
 $templateParser->display('head.tpl');
 
-// asign headertext
-$templateParser->assign('headertext', 'Dit is een header');
-
 //display template: output html
 $templateParser->display('header.tpl');
-
-// Get newsarticles from database
-//include('model/select_newsarticles.php');
-
-//$templateParser->assign('result', $result);
-
-//$templateParser->display('newsarticle.tpl');
 
 $action = isset($_GET['action'])?$_GET['action']:'home';
 
 switch($action) {
 	case 'home':
 		// Get newsarticles from database
-		include('model/select_newsarticles.php');
+		include('model/DriversDB.php');
 		$templateParser->assign('result', $result);
-		$templateParser->display('newsarticle.tpl');
+		$templateParser->display('home.tpl');
 		break;
 
-	case 'about':
-		$templateParser->display('about.tpl');
+	case 'max':
+		$templateParser->display('max.tpl');
 		break;
+
+	case 'daniel':
+	$templateParser->display('daniel.tpl');
+	break;
+
+	case 'schedule':
+	include('model/Standings.php');
+	$templateParser->display('schema.tpl');
+	break;
 }
 
 
 
 
-$templateParser->assign('footertext', 'Dit is een footer');
+//$templateParser->assign('footertext', 'Dit is een footer');
 
-$templateParser->display('footer.tpl');
+//$templateParser->display('footer.tpl');
 
